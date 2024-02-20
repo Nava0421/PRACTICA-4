@@ -45,17 +45,19 @@ text-align: center;
 }
 
 main{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  flex-wrap: wrap;
 }
 
 .product-card{
-    background-color:orange;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    width: 17rem;
+  background-color: orange;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 17rem;
+  margin-top: 10px;
 }
 
 .product-image {
@@ -77,6 +79,7 @@ main{
     background-color: tomato;
     text-align: center;
     margin: 0rem 0 0.5rem 0;
+    font-family: Algerian;
 }
 
 
@@ -117,3 +120,258 @@ main{
     justify-content: center;
     align-items: center;
   }
+
+  /*Playera GTR*/
+
+  .product-card2{
+    background-color:grey;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 17rem;
+    margin-top: 10px;
+}
+
+.product-image2 {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.product-image2 img {
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.product-info2 {
+    flex: 1;
+}
+
+.product-card2 h3 {
+    background-color: black;
+    text-align: center;
+    margin: 0rem 0 0.5rem 0;
+    font-family: Algerian;
+}
+
+
+.product-info2 p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.button-example2{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+.button-example2:hover {
+    background-color: blue;
+
+  }
+  
+.button-example2:active {
+    background-color: blue;
+    padding: 14px 31px;
+    margin: 3px 1px;
+  }
+
+  .button-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Playera SUPRA*/
+
+  .product-card3{
+    background-color: purple;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 17rem;
+    margin-top: 10px;
+}
+
+.product-image3 {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.product-image3 img {
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.product-info3 {
+    flex: 1;
+}
+
+.product-card3 h4 {
+    background-color: black;
+    text-align: center;
+    margin: 0rem 0 0.5rem 0;
+    font-family: Algerian;
+}
+
+
+.product-info3 p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.button-example3{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+.button-example3:hover {
+    background-color: red;
+
+  }
+  
+.button-example3:active {
+    background-color: red;
+    padding: 14px 31px;
+    margin: 3px 1px;
+  }
+
+  .button-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ @media (max-width: 767px) {
+    
+      .container {
+      
+      grid-template-areas: (1, 1FR) /*CELULAR*/
+      
+      "header"
+      
+      "main"
+      
+      "nav"
+      
+      "redes"
+      
+      "contacto"
+      
+      "footer"
+      
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+    
+    grid-template-areas: (1, 1FR) /*CELULAR*/
+    
+    "header header"
+    
+    "nav main" 
+    
+    "redes contacto"
+    
+    "footer footer"
+    
+    }}
+
+    @media (max-width: 767px) {
+    
+      .container {
+      
+      grid-template-areas: (2, 1FR) /*TABLET*/
+      
+      "header"
+      
+      "main"
+      
+      "nav"
+      
+      "redes"
+      
+      "contacto"
+      
+      "footer"
+      
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+    
+    grid-template-areas: (2, 1FR) /*TABLET*/
+    
+    "header header"
+    
+    "nav main" 
+    
+    "redes contacto"
+    
+    "footer footer"
+    
+    }}
+
+    @media (max-width: 767px) {
+    
+      .container {
+      
+      grid-template-areas: (3, 1FR) /*LAPTOP*/
+      
+      "header"
+      
+      "main"
+      
+      "nav"
+      
+      "redes"
+      
+      "contacto"
+      
+      "footer"
+      
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+    
+    grid-template-areas: (3, 1FR) /*LAPTOP*/
+    
+    "header header"
+    
+    "nav main" 
+    
+    "redes contacto"
+    
+    "footer footer"
+    
+    }}
